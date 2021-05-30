@@ -89,6 +89,7 @@ namespace CapaPresentacion
         {
             habilitar(false, true);
             CleanText();
+            tablaCat.ClearSelection();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
