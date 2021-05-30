@@ -12,8 +12,8 @@ namespace CapaDatos
 {
     public class D_Categoria
     {
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString);
-    
+        //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString);
+        SqlConnection conn = new SqlConnection("Server=.;database=Mantenimiento;Integrated Security=True");
         public List<E_Categoria> ListarCategoria(string buscar)
         {
            
