@@ -47,5 +47,43 @@ namespace CapaPresentacion
             tabla.Columns[0].DisplayIndex = 11;
             tabla.Columns[1].DisplayIndex = 11;
         }
+
+        private void tabla_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (tabla.Rows[e.RowIndex].Cells["delete"].Selected)
+            {
+                DialogResult dialogResult = MessageBox.Show("Desea Eliminar este Registro?", "Mensaje del Sistema", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    int delete = Convert.ToInt32(tabla.Rows[e.RowIndex].Cells[2].Value.ToString());
+                    pro.EliminarProducto(delete);
+                    LlenarTabla();
+                }
+            }
+            else if(tabla.Rows[e.RowIndex].Cells["edit"].Selected)
+            {
+                FormPro producto = new FormPro();
+                producto.Update = true;
+                producto.txtId.Text = tabla.Rows[e.RowIndex].Cells["idproducto"].Value.ToString();
+                producto.txtCodigo.Text = tabla.Rows[e.RowIndex].Cells["codigo"].Value.ToString();
+                producto.txtNombre.Text = tabla.Rows[e.RowIndex].Cells["nombre"].Value.ToString();
+                producto.txtpcompra.Text = tabla.Rows[e.RowIndex].Cells["precioc"].Value.ToString();
+                producto.txtpventa.Text = tabla.Rows[e.RowIndex].Cells["preciov"].Value.ToString();
+                producto.txtStock.Text = tabla.Rows[e.RowIndex].Cells["stock"].Value.ToString();
+                producto.cbcat.Text = tabla.Rows[e.RowIndex].Cells["categoria"].Value.ToString();
+                producto.cbmar.Text = tabla.Rows[e.RowIndex].Cells["marca"].Value.ToString();
+
+                producto.ShowDialog();
+                LlenarTabla();
+            }
+        }
+
+        private void btnnewpro_Click(object sender, EventArgs e)
+        {
+            FormPro pro = new FormPro();
+            pro.ShowDialog();
+            pro.Update = false;
+            LlenarTabla();
+        }
     }
 }

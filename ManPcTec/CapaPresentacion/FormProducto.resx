@@ -121,6 +121,38 @@
         4RK8FQRB8A9OccRH/OxwOQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="btnExcel.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAflJREFUSEvt
+        Vj1LA0EUTERsRLG0stI/IIiNSLARRNAmxnwSAlYiVhaCQkpBwV9g4w+xEQRLAxYWARGtgviBqCio88Lc
+        8rK7yZ2nooUDw97Nm3l7d3t3bOIffw3JXC43Ai4WCoXtfD5fw/iC8QraDD1fQzqd7slmsxNovIrG++Ap
+        KJO8t+E1o/GBq59Do0ercSgZT/hqZL3jk8Fd3ntCoWS808TCc9pceMyRyHhonjYXPnMUMm6g9WKxONXO
+        ZxAYPkvGDbSOtZ1s5zMIDOSKaLjicaXtioZm00ozDbXmI20uLGOjUqn0UT8Cn8rl8mC1Wu3CcY2eloZa
+        85E2F7YRb/ma6BhLON/j8YLtE11D63HXuHnXCPdiwtFUKtWNx3xm+xg30HqcNW4SE26yLPUluy5k2ZvX
+        pM2Fzwwusyz1jFVrkuVvnbgu/+5SqTSEOx+WFwvjie1j3EDrcdc4Izom28LxDj2zqt6k6Bpaj7PGx5CS
+        GPvBW/AOn9OA+HAhh/S0NNSaj7S5UKY3+XFQWw90XP0GtTHxBLpoguC8HWlz4TNHIeMGWo+7xpHIuIHW
+        Y3/HUch4aJ42Fyg+2OYoZDxs4gvaXGCvNY839tkT6kjGO018iUceuilMys8C5gxG2VEegPI5+RrKL/WG
+        uR+Bs70FX3HeiHIn//hFJBIfsypeYroGckIAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnPrint.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAANBJREFUSEvt
+        lFEKwjAQRHM+8QTJWcWTKFLqOXRXRqaE+cimBj+aB+9DZzoLIk2T41JKuZqvPeacL5hrRw31iLl21EiP
+        mJsQ+1nO5n37M/3Ym/3ZTjhHLFiq4ggfOEdEaYg4R1RphDhHVGmEOEdUaYQ4R1TJRRxGbbmIiSq5iMOo
+        LRcxUSUXcRi15SImquQiDqO2XMRElVzEYdSWi5jYl2tdchGHUVvmgpjYl/6ufm5KHxGHqXfMVb6ra74P
+        4GOY7uePe3ivmGtHjfSIucm/SOkNB0O9OFw2pW8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnnewpro.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAMhJREFUSEvt
+        lk0KAjEUg3swEXEpXqB/R1dkGM+hr5CFlAQqvnGh/eBbNUlBikyY/B8557N5NR9OXlJKJ8xrLLh0RQ9v
+        mNeQkouY17CSh5jXsBKzlHKotR7ZGRPzGlZiIv52XsJKTMTnxVLENazERHy7i9vrxdEw7LXjSNMXYow7
+        HA1jf5H7fgdHmr6gRHy7n1qJ+LxYiriGlZiIf//i9trZ61ViXsNKHmJew0oeYl5jobUvObhgXmOh9rF3
+        fyl96jr0sTf5MUJ4AsUAgexHZXJxAAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="edit.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>

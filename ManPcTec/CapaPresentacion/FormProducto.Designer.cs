@@ -50,6 +50,9 @@ namespace CapaPresentacion
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btnExcel = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.btnnewpro = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -245,7 +248,7 @@ namespace CapaPresentacion
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(11, 15);
+            this.label5.Location = new System.Drawing.Point(11, 5);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 19);
             this.label5.TabIndex = 3;
@@ -253,15 +256,15 @@ namespace CapaPresentacion
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(115, 9);
+            this.txtBuscar.Location = new System.Drawing.Point(13, 27);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(310, 23);
+            this.txtBuscar.Size = new System.Drawing.Size(249, 23);
             this.txtBuscar.TabIndex = 4;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(426, 8);
+            this.pictureBox4.Location = new System.Drawing.Point(245, 26);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(26, 26);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -271,6 +274,9 @@ namespace CapaPresentacion
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.btnExcel);
+            this.panel7.Controls.Add(this.btnPrint);
+            this.panel7.Controls.Add(this.btnnewpro);
             this.panel7.Controls.Add(this.label14);
             this.panel7.Controls.Add(this.label13);
             this.panel7.Controls.Add(this.label12);
@@ -287,6 +293,41 @@ namespace CapaPresentacion
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(973, 503);
             this.panel7.TabIndex = 5;
+            // 
+            // btnExcel
+            // 
+            this.btnExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExcel.Image")));
+            this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExcel.Location = new System.Drawing.Point(842, 9);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(120, 41);
+            this.btnExcel.TabIndex = 16;
+            this.btnExcel.Text = "   Ex&cel";
+            this.btnExcel.UseVisualStyleBackColor = true;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.Location = new System.Drawing.Point(718, 9);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(120, 41);
+            this.btnPrint.TabIndex = 15;
+            this.btnPrint.Text = "   Im&primir";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            // 
+            // btnnewpro
+            // 
+            this.btnnewpro.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnnewpro.Image = ((System.Drawing.Image)(resources.GetObject("btnnewpro.Image")));
+            this.btnnewpro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnnewpro.Location = new System.Drawing.Point(300, 9);
+            this.btnnewpro.Name = "btnnewpro";
+            this.btnnewpro.Size = new System.Drawing.Size(120, 41);
+            this.btnnewpro.TabIndex = 14;
+            this.btnnewpro.Text = "  &NUEVO";
+            this.btnnewpro.UseVisualStyleBackColor = true;
+            this.btnnewpro.Click += new System.EventHandler(this.btnnewpro_Click);
             // 
             // label14
             // 
@@ -390,6 +431,7 @@ namespace CapaPresentacion
             this.tabla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.tabla.Size = new System.Drawing.Size(949, 412);
             this.tabla.TabIndex = 6;
+            this.tabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tabla_CellContentClick);
             // 
             // edit
             // 
@@ -468,6 +510,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormProducto";
@@ -537,6 +580,9 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnnewpro;
+        private System.Windows.Forms.Button btnExcel;
+        private System.Windows.Forms.Button btnPrint;
     }
 }
 
